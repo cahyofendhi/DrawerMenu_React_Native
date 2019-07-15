@@ -2,8 +2,10 @@ import React from 'react';
 
 import { createStackNavigator } from 'react-navigation'
 
-import NavigationDrawerBar from './drawer/NavigationDrawerBar';
+import NavigationDrawerBar from '../../component/drawer/NavigationDrawerBar';
 import Setting from '../pages/Setting';
+
+import { color } from '../../style/style';
 
 const SettingNavigator = createStackNavigator({
     Setting: {
@@ -12,9 +14,9 @@ const SettingNavigator = createStackNavigator({
         title: 'Setting Page',
         headerLeft: <NavigationDrawerBar navigationProps={navigation} />,
         headerStyle: {
-          backgroundColor: '#6097f0',
+          backgroundColor: color.color_primary,
         },
-        headerTintColor: '#fff',
+        headerTintColor: color.color_white,
       }),
     },
   });

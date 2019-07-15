@@ -2,8 +2,9 @@ import React from 'react';
 
 import { createStackNavigator } from 'react-navigation'
 
-import NavigationDrawerBar from './drawer/NavigationDrawerBar';
+import NavigationDrawerBar from '../../component/drawer/NavigationDrawerBar';
 import Home from '../pages/Home';
+import { color } from '../../style/style';
 
 const HomeNavigator = createStackNavigator({
     Home: {
@@ -12,9 +13,9 @@ const HomeNavigator = createStackNavigator({
         title: 'Home Page',
         headerLeft: <NavigationDrawerBar navigationProps={navigation} />,
         headerStyle: {
-          backgroundColor: '#6097f0',
+          backgroundColor: color.color_primary,
         },
-        headerTintColor: '#fff',
+        headerTintColor: color.color_white,
       }),
     },
   });

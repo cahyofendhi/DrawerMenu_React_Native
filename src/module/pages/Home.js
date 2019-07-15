@@ -6,7 +6,7 @@ export default class Screen1 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Screen 1</Text>
+        <Text>DASHBOARD</Text>
       </View>
     )
   }

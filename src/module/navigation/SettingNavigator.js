@@ -11,7 +11,7 @@ const SettingNavigator = createStackNavigator({
     Setting: {
       screen: Setting,
       navigationOptions: ({ navigation }) => ({
-        title: 'Setting Page',
+        title: 'Setting',
         headerLeft: <NavigationDrawerBar navigationProps={navigation} />,
         headerStyle: {
           backgroundColor: color.color_primary,

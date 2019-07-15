@@ -7,7 +7,7 @@ export default class Screen3 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>SETTING</Text>
+        <Text>SETTING PAGE</Text>
       </View>
     )
   }

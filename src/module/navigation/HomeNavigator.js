@@ -10,7 +10,7 @@ const HomeNavigator = createStackNavigator({
     Home: {
       screen: Home,
       navigationOptions: ({ navigation }) => ({
-        title: 'Home Page',
+        title: 'Home',
         headerLeft: <NavigationDrawerBar navigationProps={navigation} />,
         headerStyle: {
           backgroundColor: color.color_primary,

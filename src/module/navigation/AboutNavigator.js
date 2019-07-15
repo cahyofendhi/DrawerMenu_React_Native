@@ -10,7 +10,7 @@ const AboutNavigator = createStackNavigator({
     About: {
       screen: About,
       navigationOptions: ({ navigation }) => ({
-        title: 'About Page',
+        title: 'About',
         headerLeft: <NavigationDrawerBar navigationProps={navigation} />,
         headerStyle: {
           backgroundColor: color.color_primary,

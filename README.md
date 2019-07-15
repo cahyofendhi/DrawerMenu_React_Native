@@ -1,5 +1,6 @@
 # DrawerMenu_React_Native
-create drawer menu with customize menu item in react navigation
+- React Native = 0.60.3
+- React Navigation = 3.x
 
 
 ![](drawer.gif)

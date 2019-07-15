@@ -7,6 +7,7 @@ class SidebarMenu extends Component {
 
   constructor() {
     super();
+    global.currentScreenIndex = 0
     this.items = [
       {
         icon_menu: 'ios-home',

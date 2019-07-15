@@ -5,7 +5,6 @@ import { createDrawerNavigator, createAppContainer} from 'react-navigation';
 import HomeNavigator from './HomeNavigator';
 import AboutNavigator from './AboutNavigator';
 import SettingNavigator from './SettingNavigator';
-import SideMenu from '../../component/drawer/SidebarMenu';
 import SidebarMenu from '../../component/drawer/SidebarMenu';
 
 const DrawerNavigatorExample = createDrawerNavigator({
@@ -15,6 +14,7 @@ const DrawerNavigatorExample = createDrawerNavigator({
   SettingMenu: { screen: SettingNavigator },
 },
 {
+  initialRouteName: 'HomeMenu',
   contentComponent: SidebarMenu,
   drawerWidth: Dimensions.get('window').width - 100,
 });

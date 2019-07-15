@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import Navigation from "./src/module/navigation/DrawerNavigator";
 

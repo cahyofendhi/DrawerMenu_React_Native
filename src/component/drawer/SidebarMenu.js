@@ -43,10 +43,13 @@ class SidebarMenu extends Component {
 
         <View style={styles.mainContent}>
           {this.items.map((item, key) => (
-            <TouchableOpacity onPress={() => {
-                                          global.currentScreenIndex = key;
-                                          this.props.navigation.navigate(item.navigate);
-                                        }}
+            <TouchableOpacity key={key} onPress={() => {
+                global.currentScreenIndex = key;
+                const parent = this.props.navigation.dangerouslyGetParent();
+                const isDrawerOpen = parent && parent.state && parent.state.isDrawerOpen;
+                console.log(`Drawer : ${isDrawerOpen}`);
+                this.props.navigation.navigate(item.navigate);
+              }}
               style={{...styles.content, 
                 ...{backgroundColor: global.currentScreenIndex === key ? color.color_grey : color.color_white}}}>
 

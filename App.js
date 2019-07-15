@@ -1,44 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 
-import React, {Fragment} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import React, { Component } from "react";
+import Navigation from "./src/module/navigation/DrawerNavigator";
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-import MyDrawerNavigator from "./src/MyDrawerNavigator";
-
-const App = () => {
-  return (
-    <View style={styles.container}>
-      <MyDrawerNavigator/>
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 25,
-  },
-});
-
-export default App;
+export default class App extends Component {
+  render() {
+    return <Navigation />;
+  }
+}
